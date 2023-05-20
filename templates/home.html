@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Salary Predictor app</title>
+</head>
+<style> *{font-size:29px; font-family:Arial; }
+body { background-color:skyblue; }
+</style>
+<body>
+<center>
+<h1>Welcome to the salary predictor app! </h1>
+<h2>To proceed further, kindly fill the form</h2>
+<form action="/find" method="POST">
+<input type="number" step="any" placeholder="enter experience in years" name="exp" required>
+<br><br>
+<input type="number" step="any" placeholder="enter your test score" name="ts" required>
+<br><br>
+<input type="number" step="any" placeholder="enter your interview score" name="isc" required>
+<br><br>
+<input type="submit" value="Predict salary">
+<br><br>
+{{msg}}
+</form>
+<form method="POST" action="/logout">
+<input type="submit" value="Logout">
+</form>
+</center>
+</body>
+</html>
